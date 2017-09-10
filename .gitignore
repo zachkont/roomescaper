@@ -1,8 +1,11 @@
 *.png
 *.gif
 *.jpg
-data/my-nice-form/*.txt
 pages/contact/form.md
+pages/contamination
+pages/spectrum
+pages/images
+pages/04.venues
 plugins
 config
 accounts
