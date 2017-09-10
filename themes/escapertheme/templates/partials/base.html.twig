@@ -103,6 +103,13 @@
         {% do assets.addJs('theme://uikit/js/components/autocomplete.min.js',100) %}
     {% endblock %}
     {{ assets.js() }}
+	<script>
+		if('serviceWorker' in navigator) {
+		  navigator.serviceWorker
+				   .register('/serviceworker.js')
+				   .then(function() { console.log("Service Worker Registered"); });
+		}
+	</script>
     <script>
         (function ($, UI) {
           //sample data
