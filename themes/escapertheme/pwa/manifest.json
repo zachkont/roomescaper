@@ -1,0 +1,15 @@
+{
+  "short_name": "RoomEscaper",
+  "name": "The Room Escaper",
+  "icons": [
+    {
+      "src":"images/icon.png",
+      "sizes": "310x310",
+      "type": "png"
+    }
+  ],
+  "start_url": "http://roomescaper.gr/el",
+  "background_color": "#7cb342",
+  "theme_color": "#7cb342",
+  "display": "fullscreen"
+}

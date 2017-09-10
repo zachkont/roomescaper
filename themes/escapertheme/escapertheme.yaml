@@ -1,0 +1,6 @@
+streams:
+  schemes:
+    theme:
+      type: ReadOnlyStream
+      paths:
+        - user/themes/escapertheme

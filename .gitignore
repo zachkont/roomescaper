@@ -1,0 +1,9 @@
+*.png
+*.gif
+*.jpg
+data/my-nice-form/*.txt
+pages/contact/form.md
+plugins
+config
+accounts
+data

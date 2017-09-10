@@ -1,0 +1,11 @@
+<div class="uk-grid" data-uk-grid-margin>
+    <div class="uk-width-small-2-5 uk-width-medium-1-4">
+        <img src="{{ page.media.images|first.url }}" alt="{{page.title}} image">
+    </div>
+    <div class="uk-width-small-3-5 uk-width-medium-3-4">
+        <h1>{{page.title}}</h1>
+        {{page.content}}
+        <!-- room footer with ratings, team size and difficulty -->
+        {% include 'partials/roomfooter.html.twig' %}   
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<!-- preloader -->
+{% block preloader %}
+    {% include 'partials/preloader.html.twig' %}
+{% endblock %}
+
+
+<div id="preloader" style="text-align:center; height: 100vh;">
+    {{ page.find('/images').media["logo_vector.svg"].html() }}
+</div>
+
+    <!-- onDocument.load equivalent-->
+    <script>
+         //document.getElementById("preloader").style.display = 'none'; 
+    </script>

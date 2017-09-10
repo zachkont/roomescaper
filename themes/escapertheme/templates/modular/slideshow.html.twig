@@ -1,0 +1,7 @@
+<div>
+    <ul class="uk-slideshow" data-uk-slideshow="{autoplay:true, animation: 'puzzle'}">
+        {% for slide in page.header.slides %}
+        <li><img src="{{ slide.image }}" alt="" height="700" width="1920"></li>
+        {% endfor %}
+    </ul>
+</div>

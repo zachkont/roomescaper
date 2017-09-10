@@ -1,0 +1,11 @@
+<div class="uk-margin-bottom uk-cover-background uk-position-relative" style="height: 250px; background-position: 50% {%if page.header.imageposition%}{{page.header.imageposition}}{%else%}50%{%endif%}; background-image: url({{page.media.images|first.url}});">
+    <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+        <div class="roomcover">{{page.title}}</div>
+    </div>
+    {% if page.header.visitdate %}
+    <div class="roomdate uk-vertical-align-bottom">{{page.header.visitdate}}</div>
+    {% endif %}
+</div>
+{{page.content}}
+<!-- room footer with ratings, team size and difficulty -->
+{% include 'partials/roomfooter.html.twig' %}

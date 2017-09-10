@@ -1,0 +1,74 @@
+{% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+
+{% macro loopinside(page) %}
+    {% for p in page.children %}
+        {% if p.children|length > 0 %}
+            <li {{ current_page }}>
+                <a href="{% if p.children.visible.count > 0 %}#{% else %}{{ p.url }}{% endif %}">
+                    {{ p.menu }} {% if p.header.offcanvasicon %}<i class="uk-icon-justify uk-icon-{{ p.header.offcanvasicon }}"></i>{% endif %}
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+{% macro loop(page) %}
+    {% for p in page.children.visible %}
+        {% if not (p.home and p.active) %}
+            {% set current_page = (p.active) ? ' class="uk-active"' : '' %}
+            {% if p.children.visible.count > 0 %}
+                {% set current_page = (p.activeChild) ? ' class="uk-active uk-parent"' : ' class="uk-parent"' %}
+            {% endif %}
+            <li{{ current_page }}>
+                <a href="{% if p.children.visible.count > 0 %}#{% else %}{{ p.url }}{% endif %}">
+                    {{ p.menu }} {% if p.header.offcanvasicon %}<i class="uk-icon-justify uk-icon-{{ p.header.offcanvasicon }}"></i>{% endif %}
+                </a>
+                {% if p.children.visible.count > 0 %}
+                    <ul class="uk-nav-sub">
+                        {{ _self.loopinside(p) }}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+
+
+{% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
+<div id="offcanvas2" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+        <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon uk-text-right" data-uk-nav data-uk-scrollspy-nav="{closest:'li'}">
+
+            <li class="uk-autocomplete uk-search uk-margin-top uk-margin-bottom uk-margin-left uk-margin-right" id="autocomplete2" style="display: block;">
+                <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                        <input class="uk-search-field uk-width-1-1" type="text" id="autocomplete-input1" placeholder="Search...">
+                    </div>
+                </div>
+                <script type="text/autocomplete">
+                    <ul class="uk-nav uk-nav-autocomplete uk-autocomplete-results">
+                        {{ '{{' }}~items{{ '}}' }}
+                        <li data-value="{{ '{{' }} $item.value {{ '}}' }}">
+                            <a href="{{ '{{' }} $item.url {{ '}}' }}">
+                                {{ '{{' }} $item.title {{ '}}' }}
+                                <div>{{ '{{{' }} $item.text {{ '}}}' }}</div>
+                            </a>
+                        </li>
+                        {{ '{{' }}/items{{ '}}' }}
+                    </ul>
+                </script>
+            </li>
+        
+        {% if show_onpage_menu %}
+        {% for module in page.collection() %}
+            {% set current_module = (module.active or module.activeChild) ? 'active' : '' %}
+            <li class="{{ current_module }}"><a href="#{{ _self.pageLinkName(module.menu) }}" aria-label="off-canvas menu" data-uk-smooth-scroll="{offset: 70}">{{ module.menu }} {% if module.header.offcanvasicon %}<i class="uk-icon-justify uk-icon-{{ module.header.offcanvasicon }}"></i>{% endif %}</a></li>
+        {% endfor %}
+        {% endif %}
+
+        {{ _self.loop(pages) }}
+
+        </ul>
+    </div>
+</div>

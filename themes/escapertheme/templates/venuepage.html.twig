@@ -1,0 +1,44 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <div class="darkbg uk-contrast">
+        <div class="uk-container uk-container-center">
+            <div class="uk-text-center">
+                <img class="uk-width-1-2 uk-width-small-1-3 uk-width-medium-1-4" src="{{page.media.images|first.cropResize(672, 672).url}}" alt="{{page.title}} logo" height="1024" width="1024">
+                <h1>{{page.title}}</h1>
+            </div>
+            {{page.content}}
+            <div class="uk-text-center">
+                <a href="{{page.header.details.url}}" rel="noopener" target="_blank"><i class="uk-icon-external-link"></i> {{page.header.details.url}}</a>
+            </div>
+            <!-- Buttons for regions -->
+            <div class="uk-flex-center uk-margin-bottom uk-text-center uk-margin-top">
+                {% for module in page.collection() %}
+                {% if module.header.locationid %}
+                    <a class="uk-button uk-button-large uk-margin-small-right uk-margin-small-bottom uk-button-primary" data-uk-smooth-scroll="{offset: 70}" href="#{{ _self.pageLinkName(module.header.locationid) }}">{{module.header.location}}</a>
+                {% endif %}
+                {% endfor %}            
+            </div>
+        </div>
+    </div>
+    
+    <!-- Rooms begin here -->
+    {% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
+        {% for module in page.collection() %}
+            {% if module.header.location %}
+            <div class="locationbg uk-contrast" id="{{ module.header.locationid }}">
+                <div class="uk-container uk-container-center">
+                    <div class="uk-text-center">
+                        <h2 class="uk-margin-remove">{{ module.header.location }}</h2>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            <div class="uk-container uk-container-center uk-margin-large-top">
+
+                <div id="{{ _self.pageLinkName(module.menu) }}" class="uk-margin-large-bottom">
+                    {{ module.content }}
+                </div>
+            </div>
+        {% endfor %}
+{% endblock %}

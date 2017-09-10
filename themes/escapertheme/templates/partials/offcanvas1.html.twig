@@ -1,0 +1,39 @@
+
+<div id="offcanvas1" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip" style="width: 300px;">
+        <!-- search bar -->
+            <div class="uk-autocomplete uk-search uk-margin-top uk-margin-bottom uk-margin-left uk-margin-right" id="autocomplete1" style="display: block;">
+                <div class="uk-grid">
+                    <div class="uk-width-1-1">
+                        <input class="uk-search-field uk-width-1-1" type="text" id="autocomplete-input" placeholder="Search...">
+                    </div>
+                </div>
+                <script type="text/autocomplete">
+                    <ul class="uk-nav uk-nav-autocomplete uk-autocomplete-results">
+                        {{ '{{' }}~items{{ '}}' }}
+                        <li data-value="{{ '{{' }} $item.value {{ '}}' }}">
+                            <a href="{{ '{{' }} $item.url {{ '}}' }}" aria-label="button">
+                                {{ '{{' }} $item.title {{ '}}' }}
+                                <div>{{ '{{{' }} $item.text {{ '}}}' }}</div>
+                            </a>
+                        </li>
+                        {{ '{{' }}/items{{ '}}' }}
+                    </ul>
+                </script>
+            </div>
+
+        <!-- venue list -->
+        <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav data-uk-scrollspy-nav="{closest:'li'}">
+        {% for p in page.find('/venues').children %}
+            {% set current_page = (p.active) ? ' class="uk-active"' : '' %}
+            {% if p.children|length > 0 %}
+            <li{{ current_page }}>
+                <a href="{{ p.url }}" aria-label="button">
+                    {{ p.menu }}
+                </a>
+            </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+</div>

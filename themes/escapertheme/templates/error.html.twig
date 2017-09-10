@@ -1,0 +1,10 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+<div class="uk-container uk-container-center uk-flex uk-flex-center uk-flex-middle uk-height-viewport">
+    <div class="uk-text-center uk-text-muted">
+        <i class="uk-icon-frown-o" style="font-size: 64px;"></i>
+        <h1 class="uk-text-muted">Error {{ header.http_response_code }}</h1>
+        {{ page.content }}
+    </div>
+</div>
+{% endblock %}

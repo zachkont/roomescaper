@@ -1,0 +1,62 @@
+<div class="uk-container uk-container-center uk-margin-large">
+    <div class="uk-text-center">
+         {{ content }}
+    </div>
+    <ul class="uk-grid uk-grid-width-medium-1-2">
+        {% for panel in page.header.panels %}
+        <li class="uk-panel uk-panel-space">
+            <h2 class="uk-panel-title uk-text-bold"><i class="uk-text-primary uk-margin-small-right uk-icon-medium uk-icon-{{ panel.icon }}"></i> {{panel.header}}</h2>
+            {{panel.text}}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- <div class="uk-margin uk-text-contrast uk-text-center uk-flex uk-flex-center uk-flex-middle" data-uk-parallax="{bg: '-200'}" style="height: 300px; background-image: url(user/pages/images/parthenon.jpg); background-size: 1903px 552px; background-repeat: no-repeat; background-position: 50% 500px;">
+    <div class="uk-width-medium-1-2" >
+        <div class="uk-text-center uk-contrast uk-margin-bottom uk-panel-title">{{ page.header.ratings.header }}</div>
+        <div>{{ page.header.ratings.text1 }} <i class="uk-icon-cog uk-icon-small"></i> {{ page.header.ratings.text2 }} <i class="uk-icon-cogs uk-icon-small"></i> {{ page.header.ratings.text3 }}</div>
+    </div>
+</div> -->
+
+<!--<div class="uk-cover-background uk-position-relative" data-uk-parallax="{bg: '-100'}" style="height: 800px; background-image: url(user/pages/images/parthenon.jpg);">
+  <div class="uk-position-cover">
+    <div class="uk-grid uk-contrast uk-text-justify uk-margin-left uk-margin-right">
+      <div class="uk-width-1-1 uk-text-center uk-h1">{{ page.header.ratings.header }}</div>
+      <div class="uk-width-1-1 uk-width-medium-1-3 uk-panel uk-panel-space">Για κάθε δωμάτιο που επισκέφτηκα κάνω μερικά σχόλια και δίνω μια εντύπωση. Εννοείται spoiler-free όλα. Δεν ήθελα να γίνουν όλα ένας αριθμός, οπότε οι βαθμολογίες είναι ενδεικτικές. Βαθμολογώ σύμφωνα με το πόσο καλά πέρασα (υποκειμενικό full). Υπάρχει λόγος για την κάθε βαθμολόγηση, τα 5άρια είναι αυτά που με άφησαν απόλυτα ικανοποιημένο, δεν είναι αψεγάδιαστα.</div>
+      <div class="uk-width-1-1 uk-width-medium-1-3 uk-panel uk-panel-space">Για όσους ψάχνουν κάτι γρήγορα υπάρχει Guide αλλά προτείνω να διαβάσεις και το review, μην πας με κλειστά μάτια. Όσο πιο πολύ αγαπάς τους γρίφους και τα παιχνίδια, τόσο πιο κοντά θα νιώθεις με το πώς είδα το δωμάτιο.</div>
+      <div class="uk-width-1-1 uk-width-medium-1-3 uk-panel uk-panel-space">Τέλος έχω προτεινόμενο αριθμό ατόμων και ένα σχόλιο για τη δυσκολία. Τα έχω ως εύκολα <i class="uk-icon-cog uk-icon-small"></i> και δύσκολα <i class="uk-icon-cogs uk-icon-small"></i> αλλά αντικειμενικά οι αποστάσεις είναι μηδαμινές, το επίπεδο είναι σχεδόν το ίδιο, μην παρεξηγηθούμε!</div>
+    </div>
+  </div>
+</div> -->
+
+<div style="background-color:#222222; color:#FFFFFF; padding:50px 0;" >
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid uk-contrast uk-text-justify">
+          <div class="uk-width-1-1 uk-text-center uk-h1">{{ page.header.ratings.header }}</div>
+          <div class="uk-width-1-1 uk-width-medium-1-3 uk-panel uk-panel-space">{{ page.header.ratings.text1 }}</div>
+          <div class="uk-width-1-1 uk-width-medium-1-3 uk-panel uk-panel-space">{{ page.header.ratings.text2 }}</div>
+          <div class="uk-width-1-1 uk-width-medium-1-3 uk-panel uk-panel-space">{{ page.header.ratings.text3 }} <i class="uk-icon-cog uk-icon-small"></i> {{ page.header.ratings.text4 }} <i class="uk-icon-cogs uk-icon-small"></i>  {{ page.header.ratings.text5 }}</div>
+        </div>
+    </div>
+</div>
+
+<!-- Perfect Eleven part -->
+<div style="background-color:#7cb342; color:#FFFFFF; padding:50px 0;" >
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid uk-contrast uk-text-justify">
+          <div class="uk-width-1-1 uk-text-center uk-h1">{{ page.header.perfect11.header }}</div>
+          <div class="uk-width-1-1 uk-width-medium-1-4 uk-panel uk-panel-space uk-text-center">
+            <img src="{{ page.find('/images/perfect11').media[page.header.perfect11.image1].url }}" alt="Perfect eleven logo" height="200" width="200">
+          </div>
+          <div class="uk-width-1-1 uk-width-medium-1-2 uk-panel uk-panel-space">
+            {{ page.header.perfect11.text }}
+            <br>
+            <a href="{{ page.header.perfect11.link }}" aria-label="perefect eleven link" >{{ page.header.perfect11.link }}</a>
+          </div>
+          <div class="uk-width-1-1 uk-width-medium-1-4 uk-panel uk-panel-space uk-text-center">
+            <img src="{{ page.find('/images/perfect11').media[page.header.perfect11.image2].url }}" alt="IDMS logo" height="200" width="200">
+          </div>
+        </div>
+    </div>
+</div>

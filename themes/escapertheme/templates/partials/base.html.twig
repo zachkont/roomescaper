@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}" dir="ltr">
+<head>
+{% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#7cb342">
+    <meta name="msapplication-navbutton-color" content="#7cb342">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="icon" sizes="192x192" href="{{ url('theme://images/icon.png', true) }}">
+    <link rel="apple-touch-icon" href="{{ url('theme://images/icon.png', true) }}">
+    <meta name="msapplication-square310x310logo" content="{{ url('theme://images/icon.png', true) }}">
+
+    <link rel="manifest" href="{{ url('theme://pwa/manifest.json', true) }}">
+
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="canonical" href="{{ page.url(true, true) }}">
+    {% block stylesheets %}
+        {% do assets.addCss('theme://uikit/css/uikit.min.css',107) %}
+        {% do assets.addCss('theme://uikit/css/components/sticky.min.css',106) %}
+        {% do assets.addCss('theme://uikit/css/components/progress.min.css',105) %}
+        {% do assets.addCss('theme://uikit/css/components/dotnav.almost-flat.min.css',104) %}
+        {% do assets.addCss('theme://uikit/css/components/slideshow.min.css',103) %}
+        {% do assets.addCss('theme://uikit/css/components/search.min.css',102) %}
+        {% do assets.addCss('theme://uikit/css/components/autocomplete.min.css',101) %}
+        {% do assets.addCss('theme://css/custom.css',100) %}
+    {% endblock %}
+    {{ assets.css() }}
+{% endblock %}
+</head>
+<body>
+    {% block header %}
+    <header id="header">
+        <nav class="uk-navbar" data-uk-sticky>
+            <a class="uk-navbar-brand uk-hidden-small" href="{{ base_url == '' ? '/' : base_url }}">{{ config.site.title }}</a>
+                {% block header_navigation %}
+                {% include 'partials/navigation.html.twig' %}
+                {% endblock %}
+        </nav>
+        {% block header_extra %}{% endblock %}
+    </header>
+    {% endblock %}
+
+    {% block body %}
+    <section id="body">
+        {% block content %}{% endblock %}
+    </section>
+    {% endblock %}
+
+    {% block footer %}
+    <footer id="footer">
+        <div class="darkbg uk-contrast">
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid uk-margin-large-bottom" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-4 uk-push-1-4 uk-text-center">
+                        <p class="uk-text-large">
+                            <a class="uk-margin-left uk-margin-right uk-icon-hover uk-icon-justify uk-icon-facebook"    rel="noopener" target="_blank" aria-label="facebook link" href="http://www.facebook.com/roomescaper"></a>
+                            <a class="uk-margin-left uk-margin-right uk-icon-hover uk-icon-justify uk-icon-twitter"     rel="noopener" target="_blank" aria-label="twitter link" href="http://twitter.com/Roomescaper_gr"></a>
+                            <a class="uk-margin-left uk-margin-right uk-icon-hover uk-icon-justify uk-icon-google-plus" rel="noopener" target="_blank" aria-label="google plus link"href="http://xkcd.com/918/"></a>
+                        </p>
+                        <p class="uk-text-large uk-contrast"><a aria-label="contact" href="{{base_url}}/contact">Contact me</a></p>
+                    </div>
+                    <div class="uk-width-medium-1-4 uk-push-1-4 uk-text-center">
+                        <div class="fb-like" data-href="https://www.facebook.com/roomescaper/" data-width="192" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                    </div>
+                </div>
+                <!-- <div class="uk-margin-bottom">
+                {% include 'partials/langswitcher.html.twig' %}
+                </div> -->
+                <div class="uk-text-center uk-text-small">
+                    <p class="uk-margin-bottom-remove"><span class="uk-text-muted">Room Escaper was </span> <i class="uk-icon-code"></i> <span class="uk-text-muted"> with </span> <i class="uk-icon-heart"></i> <span class="uk-text-muted"> by Nick and Zach using </span> <a rel="noopener" target="_blank" aria-label="get grav" href="http://getgrav.org">Grav</a> &amp; <a rel="noopener" target="_blank" aria-label="ui kit" href="http://getuikit.com">UIkit</a>.</p>
+                    <p class="uk-text-muted uk-margin-top-remove">Copyright &copy; 2086 <a aria-label="self" href="http://roomescaper.gr">Room Escaper</a>. Τα πνευματικά δικαιώματα των λογοτύπων ανήκουν στον εκάστοτε δημιουργό τους.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
+
+    <a href="#" aria-label="top" class="back-to-top uk-text-center" style="display: inline;" data-uk-smooth-scroll> 
+        <i class="uk-icon-arrow-up"></i>
+    </a>
+
+    <!-- desktop off-canvas -->
+    {% include 'partials/offcanvas1.html.twig' %}
+    
+    <!-- mobile off-canvas -->
+    {% include 'partials/offcanvas2.html.twig' %}
+
+    {% block javascripts %}
+        {% do assets.addJs('system://assets/jquery/jquery-2.x.min.js',108) %}
+        {% do assets.addJs('theme://uikit/js/uikit.min.js',107) %}
+        {% do assets.addJs('theme://uikit/js/components/parallax.min.js',106) %}       
+        {% do assets.addJs('theme://uikit/js/components/sticky.min.js',105) %}
+        {% do assets.addJs('theme://uikit/js/components/slideshow.min.js',104) %}
+        {% do assets.addJs('theme://uikit/js/components/slideshow-fx.min.js',103) %}
+        {% do assets.addJs('theme://uikit/js/components/grid.min.js',102) %}
+        {% do assets.addJs('theme://uikit/js/components/search.min.js',101) %}
+        {% do assets.addJs('theme://uikit/js/components/autocomplete.min.js',100) %}
+    {% endblock %}
+    {{ assets.js() }}
+    <script>
+        (function ($, UI) {
+          //sample data
+          var data = [
+                {% for venue in page.find('/venues').children %}
+                    {{'{'}}"value":"{{venue.title}}", "title":"{{venue.title}}", "url":"{{venue.url}}", "text":"<em>Venue</em>"{{'}'}},
+                    {% for room in venue.children %}
+                        {{'{'}}"value":"{{room.title}}", "title":"{{room.title}}", "url":"{{room.parent.url}}", "text":"{{room.parent.title}}"{{'}'}},
+                    {% endfor %}
+                {% endfor %}
+                ];
+          function getAutocompleteData (release) {
+            var search = this.value, items = []; //the scope is autocomplete, value in input is stored there as this.value
+            //do some stuff with your data. this is the default search of UIkit autocomplete
+            data.forEach(function(item){
+               if(item.value && item.value.toLowerCase().indexOf(search.toLowerCase())!=-1) {
+                  items.push(item);
+                        }
+            });
+            //release the data to the renderer
+            release(items);
+            }
+          //this is the easy way to do it. Just pass all the options as JSON/js and let UIkit do the filtering
+            UIkit.on('domready.uk.dom', function(){
+            UI.autocomplete($('#autocomplete1'), {
+              source: data, //pass in the array of unfiltered items or a functioncall returning an array of (unfiltered) items
+              renderer: function (data) { //optional: hide ac when no items
+                    if (data) {
+                        if (data.length) {
+                            this.dropdown.append(this.template({"items": data}));
+                            this.show();
+                            this.trigger('show.uk.autocomplete', [data, this]);
+                        } else {
+                            this.hide();
+                        }
+                    }
+                }
+              });
+            });
+            UIkit.on('domready.uk.dom', function(){
+            UI.autocomplete($('#autocomplete2'), {
+              source: data, //pass in the array of unfiltered items or a functioncall returning an array of (unfiltered) items
+              renderer: function (data) { //optional: hide ac when no items
+                    if (data) {
+                        if (data.length) {
+                            this.dropdown.append(this.template({"items": data}));
+                            this.show();
+                            this.trigger('show.uk.autocomplete', [data, this]);
+                        } else {
+                            this.hide();
+                        }
+                    }
+                }
+              });
+            });
+        }(jQuery, UIkit));
+    </script>
+
+    {% block bottom %}
+        {{ assets.js('bottom') }}
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+    {% endblock %}
+    
+    <!-- google tracker -->
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-62032253-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- end google tracker-->
+</body>
+</html>

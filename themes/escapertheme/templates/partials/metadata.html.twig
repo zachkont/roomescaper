@@ -1,0 +1,12 @@
+<meta name="og:type" content="article">
+    <meta name="og:url" content="http://roomescaper.gr{{ page.url }}">
+    <meta name="og:image" content="http://roomescaper.gr{{ page.media.images|first.url }}">
+    <meta name="og:site_name" content="The Room Escaper">
+    <meta name="og:short_name" content="RoomEscaper">
+    <meta name="fb:admins" content="609867849">
+    <meta name="google" content="notranslate">
+    <meta name="google-site-verification" content="vk6abOguVMiFzgJ45aNxPWHSgdy5o97vM2vx3lXge18">
+
+{% for meta in page.metadata %}
+    <meta {% if meta.name %}name="{{ meta.name }}" {% endif %}{% if meta.http_equiv %}http-equiv="{{ meta.http_equiv }}" {% endif %}{% if meta.charset %}charset="{{ meta.charset }}" {% endif %}{% if meta.property %}property="{{ meta.property }}" {% endif %}{% if meta.content %}content="{{ meta.content }}" {% endif %}/>
+{% endfor %}
