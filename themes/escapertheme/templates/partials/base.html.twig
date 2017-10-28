@@ -21,13 +21,13 @@
 
     <link rel="canonical" href="{{ page.url(true, true) }}">
     {% block stylesheets %}
-        {% do assets.addCss('theme://uikit/css/uikit.min.css',107) %}
-        {% do assets.addCss('theme://uikit/css/components/sticky.min.css',106) %}
-        {% do assets.addCss('theme://uikit/css/components/progress.min.css',105) %}
-        {% do assets.addCss('theme://uikit/css/components/dotnav.almost-flat.min.css',104) %}
-        {% do assets.addCss('theme://uikit/css/components/slideshow.min.css',103) %}
-        {% do assets.addCss('theme://uikit/css/components/search.min.css',102) %}
-        {% do assets.addCss('theme://uikit/css/components/autocomplete.min.css',101) %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.min.css',107) %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/sticky.min.css',106) %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/progress.min.css',105) %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/dotnav.almost-flat.min.css',104) %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/slideshow.min.css',103) %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/search.min.css',102) %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/autocomplete.min.css',101) %}
         {% do assets.addCss('theme://css/custom.css',100) %}
     {% endblock %}
     {{ assets.css() }}
@@ -92,15 +92,15 @@
     {% include 'partials/offcanvas2.html.twig' %}
 
     {% block javascripts %}
-        {% do assets.addJs('system://assets/jquery/jquery-2.x.min.js',108) %}
-        {% do assets.addJs('theme://uikit/js/uikit.min.js',107) %}
-        {% do assets.addJs('theme://uikit/js/components/parallax.min.js',106) %}       
-        {% do assets.addJs('theme://uikit/js/components/sticky.min.js',105) %}
-        {% do assets.addJs('theme://uikit/js/components/slideshow.min.js',104) %}
-        {% do assets.addJs('theme://uikit/js/components/slideshow-fx.min.js',103) %}
-        {% do assets.addJs('theme://uikit/js/components/grid.min.js',102) %}
-        {% do assets.addJs('theme://uikit/js/components/search.min.js',101) %}
-        {% do assets.addJs('theme://uikit/js/components/autocomplete.min.js',100) %}
+        {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js',108) %}
+        {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js',107) %}
+        {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/parallax.min.js',106) %}       
+        {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/sticky.min.js',105) %}
+        {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/slideshow.min.js',104) %}
+        {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/slideshow-fx.min.js',103) %}
+        {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/grid.min.js',102) %}
+        {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/search.min.js',101) %}
+        {% do assets.addJs('https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/autocomplete.min.js',100) %}
     {% endblock %}
     {{ assets.js() }}
     <script>
