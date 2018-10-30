@@ -1,4 +1,4 @@
-### This PR Covers
+### This PR
 
 * Short summary of what this PR is all about.
 
