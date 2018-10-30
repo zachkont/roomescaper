@@ -4,12 +4,12 @@
 
     <ul id="review-filter" class="uk-subnav uk-subnav-pill uk-flex-center">
         <li class="uk-text-muted" style="padding-top: 3px; padding-bottom: 3px;">{{page.header.labels.show}}:</li>
-        <li data-uk-filter="" class="uk-active"><a href="#">{{page.header.labels.all}}</a></li>
-        <li data-uk-filter="with-review"><a href="#">{{page.header.labels.reviewed}}</a></li>
-        <li data-uk-filter="without-review"><a href="#">{{page.header.labels.notreviewed}}</a></li>
+        <li data-uk-filter="" class="uk-active"><a aria-label="button" href="#">{{page.header.labels.all}}</a></li>
+        <li data-uk-filter="with-review"><a aria-label="button" href="#">{{page.header.labels.reviewed}}</a></li>
+        <li data-uk-filter="without-review"><a aria-label="button" href="#">{{page.header.labels.notreviewed}}</a></li>
         <li class="uk-text-muted" style="padding-top: 3px; padding-bottom: 3px;">{{page.header.labels.sort}}:</li>
-        <li data-uk-sort="name:asc"><a href="#">{{page.header.labels.az}}</a></li>
-        <li data-uk-sort="date:desc"><a href="#">{{page.header.labels.latest}}</a></li>
+        <li data-uk-sort="name:asc"><a aria-label="button" href="#">{{page.header.labels.az}}</a></li>
+        <li data-uk-sort="date:desc"><a aria-label="button" href="#">{{page.header.labels.latest}}</a></li>
     </ul>
 
     <div class="uk-grid-width-1-2 uk-grid-width-small-1-3 uk-grid-width-medium-1-4 uk-grid-width-xlarge-1-6" data-uk-grid="{controls: '#review-filter', gutter: 25}">
