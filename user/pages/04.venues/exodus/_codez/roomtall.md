@@ -3,14 +3,14 @@ title: Code Z
 
 # your rating
 puzzles:
-- color: FAF689
-- color: FFC421
-- color: 03AD4A
-- color: 18ACDE
-- color: DE1818
-  size:  small
+  - color: FAF689
+  - color: FFC421
+  - color: 03AD4A
+  - color: 18ACDE
+  - color: DE1818
+    size: small
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: easy
 difftext: Practical skills
 

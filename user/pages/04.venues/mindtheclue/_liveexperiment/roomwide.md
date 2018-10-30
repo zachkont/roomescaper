@@ -3,12 +3,12 @@ title: Live Experiment
 
 # your rating
 puzzles:
-- color: FDB813
-- color: 5767b4
-- color: f9c21a
-- color: 1C6BA0
+  - color: FDB813
+  - color: 5767b4
+  - color: f9c21a
+  - color: 1C6BA0
 
-# hex color for puzzle rating
+  # hex color for puzzle rating
 ratingcolor: FF0000
 
 # difficulty, easy/hard

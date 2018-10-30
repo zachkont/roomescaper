@@ -6,13 +6,13 @@ imageposition: 100%
 
 # your rating
 puzzles:
-- color: DBDBDB
-- color: DBDBDB
-- color: DBDBDB
-- color: DBDBDB
-- color: DBDBDB
+  - color: DBDBDB
+  - color: DBDBDB
+  - color: DBDBDB
+  - color: DBDBDB
+  - color: DBDBDB
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: hard
 difftext: SEARCH
 

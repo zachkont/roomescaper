@@ -3,11 +3,11 @@ title: The murder of Themistoklis Nikolaou
 
 # your rating
 puzzles:
-- color: FFFF14
-- color: 000000
-- color: FFFF14
+  - color: FFFF14
+  - color: 000000
+  - color: FFFF14
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: hard
 difftext: Some tough spots
 
@@ -19,7 +19,7 @@ guide: beginners
 ---
 
 The murder was commited in an old house in the suburbs of Athens and the clues lead you to a suspect. Themistoklis use many classic riddles to hide what he knew. A huge living room, one of the biggest rooms
- I have seen in an escape room, becomes your scene. OK decoration, it is plainly an old house.
+I have seen in an escape room, becomes your scene. OK decoration, it is plainly an old house.
 
 One of my fastest escapes, non stop solving.
 Of course experience makes things faster, although I do not think it is a tough room. The serial design of the puzzles, which are not very complex in themselves, makes things easy.
@@ -29,4 +29,4 @@ is unusable, dissapoining. They do have a very elegant "do not touch" though.
 
 Recommended for new players. Even for them, it should not be very tough. The whole game fits new players
 
- 3 puzzles in the colors of the police line
+3 puzzles in the colors of the police line

@@ -6,13 +6,12 @@ imageposition: 100%
 
 # your rating
 puzzles:
-- color: 55251B
-- color: 8F4234
-- color: 55251B
-- color: 8F4234
+  - color: 55251B
+  - color: 8F4234
+  - color: 55251B
+  - color: 8F4234
 
-
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: easy
 difftext: easy
 

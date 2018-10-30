@@ -1,23 +1,23 @@
 ---
 title: The Puzzle Escape Rooms
 slug: puzzle
-onpage_menu: false    # CAN'T TOUCH THIS! default: false
-visible: true         # CAN'T TOUCH THIS! default: true
+onpage_menu: false # CAN'T TOUCH THIS! default: false
+visible: true # CAN'T TOUCH THIS! default: true
 
 details:
-    url: http://www.thepuzzle.gr/
-    location: Αμπελόκηποι
-    visitedrooms: 1
-    totalrooms: 1
-    date: 20160630
+  url: http://www.thepuzzle.gr/
+  location: Αμπελόκηποι
+  visitedrooms: 1
+  totalrooms: 1
+  date: 20160630
 
-content:              # CAN'T TOUCH THIS SECTION
-    items: @self.modular
-    order:
-        by: default
-        dir: asc
+content: # CAN'T TOUCH THIS SECTION
+  items: @self.modular
+  order:
+    by: default
+    dir: asc
 metadata:
-    description: 'pneumattic, pneumatic'
+  description: 'pneumattic, pneumatic'
 ---
 
 Επι της Κηφησίας το Puzzle, έκανε την εκκίνηση μίας ιστορίας με το Pneumatic, το πρώτο και μονάδικο για τώρα δωμάτιο του.

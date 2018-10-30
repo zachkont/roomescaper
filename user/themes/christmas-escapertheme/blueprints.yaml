@@ -1,8 +1,8 @@
 name: XmasEscaperTheme
 version: 1.0.0
-description: "Escaper Theme - Xmas Edition"
+description: 'Escaper Theme - Xmas Edition'
 icon: star
 author:
- name: "Nick & Zach"
- email: 
- url: 
+  name: 'Nick & Zach'
+  ? email
+  ? url

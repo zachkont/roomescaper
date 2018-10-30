@@ -6,11 +6,11 @@ imageposition: 100%
 
 # your rating
 puzzles:
-- color: C1D0A7
-- color: 212113
-- color: CE7A4F
+  - color: C1D0A7
+  - color: 212113
+  - color: CE7A4F
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: easy
 difftext: Never stop searching
 
@@ -20,6 +20,7 @@ team: 2-3
 # put your tags here. possible options: recommended,beginners,teamaction
 guide: beginners
 ---
+
 Ουφ… Επίπονο να θυμάμαι αυτό το δωμάτιο, αλλά θα κάνω ότι μπορώ..
 
 Δωμάτιο ξενοδοχείου, εκεί σε άφησαν. Σε απήγαγαν και τώρα πρώτού γυρίσουν, καλό θα ήταν να βρεις πώς να φύγεις.

@@ -3,13 +3,13 @@ title: Sherlock Maze
 
 # your rating
 puzzles:
-- color: 383838
-- color: 2d5867
-- color: 1e2e4d
-- color: 000d11
-- color: 2c003a
+  - color: 383838
+  - color: 2d5867
+  - color: 1e2e4d
+  - color: 000d11
+  - color: 2c003a
 
-# hex color for puzzle rating
+  # hex color for puzzle rating
 ratingcolor: FF0000
 
 # difficulty, easy/hard
@@ -32,6 +32,6 @@ guide: recommended, beginners, duet
 προσπάθεια. Ίσα ίσα για το fun.
 
 Οπότε με μικρές ομαδούλες και κάθε επιπέδου παίκτες, το δωμάτιο είναι κλασσική διασκέδαση. Το παιχνίδι είναι για αυτούς που παίζουν adventure games και όχι action ρε παιδί μου. Τα πρώτα resident evil,
- όχι τα τελευταία. Το έπιασες. Μου θύμισε ένα άλλο αγαπημένο classic δωμάτιο, αν και ελαφρώς διαφορετικά μεταξύ τους <a href="http://orig08.deviantart.net/2fcf/f/2009/278/3/d/___my_sweet_dark_raven____by_gothikfox.jpg">(hint)</a>.
+όχι τα τελευταία. Το έπιασες. Μου θύμισε ένα άλλο αγαπημένο classic δωμάτιο, αν και ελαφρώς διαφορετικά μεταξύ τους <a href="http://orig08.deviantart.net/2fcf/f/2009/278/3/d/___my_sweet_dark_raven____by_gothikfox.jpg">(hint)</a>.
 
- Θέλω να του δώσω 5 γιατί αγαπώ αυτά τα δωμάτια. Αν δε τα αγαπάς κι εσύ, κόψε κάτι. (γιατι τα χρώματα ε; έλλειψη <a href="http://www.color-hex.com/color-palette/1167">φαντασίας</a> σήμερα)
+Θέλω να του δώσω 5 γιατί αγαπώ αυτά τα δωμάτια. Αν δε τα αγαπάς κι εσύ, κόψε κάτι. (γιατι τα χρώματα ε; έλλειψη <a href="http://www.color-hex.com/color-palette/1167">φαντασίας</a> σήμερα)

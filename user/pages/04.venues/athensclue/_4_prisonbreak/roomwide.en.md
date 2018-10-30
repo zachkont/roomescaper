@@ -16,12 +16,10 @@ team: 3-5
 guide:
 ---
 
-
 Two reviews for this one. First: Amazingly original! Not all players start with the same role, access to the same areas, or.. abilities. Much more of a storyline than anything else in Athens Clue. Mechanics and interaction in some points are brilliant. One of the truest endings.A pure prison escape.End of this review.
 
 Second: Whatever. Riddles that are not even close to logic. You work around a mentality "if i can extract any number out of this, I can open a lock".They told us that this has less searchins and more thought than the rest. True, usually it works with 90% searching and here it was 70%. It should not be like this.
- The riddles are the worst I've encountered and hope it stays that way. Athens clue got me used to plain and simple riddles, an attempt to get more serious took a nice room and drowned it.
-
+The riddles are the worst I've encountered and hope it stays that way. Athens clue got me used to plain and simple riddles, an attempt to get more serious took a nice room and drowned it.
 
 Personally, I want puzzles first and theme second. Their other rooms had a nice second, no first. This one managed to take the first to a negative.
 

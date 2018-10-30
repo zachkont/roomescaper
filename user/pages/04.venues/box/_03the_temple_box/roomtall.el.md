@@ -3,14 +3,14 @@ title: Temple box
 
 # your rating
 puzzles:
-- color: D0503D
-- color: EA5D41
-- color: E57B3E
-- color: E38D3A
-- color: F3D289
-- color: F5EDEA
+  - color: D0503D
+  - color: EA5D41
+  - color: E57B3E
+  - color: E38D3A
+  - color: F3D289
+  - color: F5EDEA
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: easy
 difftext: Challenging
 

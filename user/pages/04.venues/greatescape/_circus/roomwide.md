@@ -6,11 +6,11 @@ imageposition: 75%
 
 # your rating
 puzzles:
-- color: FF0000
-- color: FF2000
-- color: FF4000
+  - color: FF0000
+  - color: FF2000
+  - color: FF4000
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: easy
 difftext: Child's play
 

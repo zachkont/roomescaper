@@ -7,13 +7,13 @@ onpage_menu: true
 offcanvasicon: home
 
 content:
-    items: @self.modular
-    order:
-        by: default
-        dir: asc
-        custom:
-            - _1slideshow
-            - _2escaper
-            - _3venues
-            - _4tips
+  items: @self.modular
+  order:
+    by: default
+    dir: asc
+    custom:
+      - _1slideshow
+      - _2escaper
+      - _3venues
+      - _4tips
 ---

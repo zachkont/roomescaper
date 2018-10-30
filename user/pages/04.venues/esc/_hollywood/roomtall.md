@@ -3,11 +3,11 @@ title: Hollywood
 
 # your rating
 puzzles:
-- color: 535351
-- color: D5AE8A
-- color: D19891
+  - color: 535351
+  - color: D5AE8A
+  - color: D19891
 
-# hex color for puzzle rating
+  # hex color for puzzle rating
 ratingcolor: FF0000
 
 # difficulty, easy/hard

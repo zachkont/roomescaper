@@ -3,10 +3,10 @@ title: Taken
 
 # your rating
 puzzles:
-- color: 1008FF
-- color: FF087B
+  - color: 1008FF
+  - color: FF087B
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: easy
 difftext: Nothing special
 

@@ -3,13 +3,13 @@ title: Voodoo shop
 
 # your rating
 puzzles:
-- color: CCCCCC
-- color: F20A0A
-- color: FF0DC6
-- color: FF70D9
-- color: 2D1ED6
+  - color: CCCCCC
+  - color: F20A0A
+  - color: FF0DC6
+  - color: FF70D9
+  - color: 2D1ED6
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: hard
 difftext: Challenging
 

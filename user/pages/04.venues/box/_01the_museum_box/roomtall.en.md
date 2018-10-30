@@ -3,12 +3,12 @@ title: The Museum Box
 
 # your rating
 puzzles:
-- color: FFF712
-- color: FFF712
-- color: FFF712
-- color: FFF712
+  - color: FFF712
+  - color: FFF712
+  - color: FFF712
+  - color: FFF712
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: hard
 difftext: Decent
 

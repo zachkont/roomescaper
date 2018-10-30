@@ -3,14 +3,14 @@ title: Murder on Baker street
 
 # your rating
 puzzles:
-- color: 424242
-- color: 424242
-- color: 424242
-- color: 424242
-- color: 424242
-- color: 424242
+  - color: 424242
+  - color: 424242
+  - color: 424242
+  - color: 424242
+  - color: 424242
+  - color: 424242
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: hard
 difftext: Very tough
 

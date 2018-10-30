@@ -1,17 +1,29 @@
-@import url(//fonts.googleapis.com/css?family=Roboto&subset=latin,greek);
-@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,greek);
-@import url(//fonts.googleapis.com/css?family=Bangers);
-
 /* base fonts
  ========================================================================== */
 html {
-  font: normal 15px / 22px "Roboto", Helvetica, Arial, sans-serif;
+  font: normal 15px / 22px 'Roboto', Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   color: #212121;
 }
-h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6, .uk-navbar-nav > li > a {font-family: "Roboto Condensed", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;}
-em {color: inherit;}
+h1,
+.uk-h1,
+h2,
+.uk-h2,
+h3,
+.uk-h3,
+h4,
+.uk-h4,
+h5,
+.uk-h5,
+h6,
+.uk-h6,
+.uk-navbar-nav > li > a {
+  font-family: 'Roboto Condensed', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+}
+em {
+  color: inherit;
+}
 .uk-text-small {
   font-size: 12px;
   line-height: 16px;
@@ -19,10 +31,8 @@ em {color: inherit;}
 /* ======================================================================== */
 
 body {
-  background: #ffffff url("../images/puzzle.gif") repeat fixed center;
+  background: #ffffff url('../images/puzzle.gif') repeat fixed center;
 }
-
-
 
 /* base fonts
  ========================================================================== */
@@ -36,7 +46,7 @@ body {
  */
 .re-grid-container:before,
 .re-grid-container:after {
-  content: "";
+  content: '';
   display: table;
 }
 .re-grid-container:after {
@@ -50,8 +60,6 @@ body {
   margin-right: auto;
 }
 /* ======================================================================== */
-
-
 
 /* to-top button
  ========================================================================== */
@@ -75,29 +83,38 @@ body {
 }
 /* ======================================================================== */
 
-
-
 /* language switcher
  ========================================================================== */
-#langswitcher a {color: rgba(255, 255, 255, 0.7);}
-#langswitcher a:hover {text-decoration: none; color: #7cb342;}
-#langswitcher a.uk-active {font-weight: bold;}
+#langswitcher a {
+  color: rgba(255, 255, 255, 0.7);
+}
+#langswitcher a:hover {
+  text-decoration: none;
+  color: #7cb342;
+}
+#langswitcher a.uk-active {
+  font-weight: bold;
+}
 /* ======================================================================== */
-
-
 
 /* panel box styling
  ========================================================================== */
 .uk-panel-box {
   color: rgba(0, 0, 0, 0.87);
 }
-.panelcolor1{background-color: #8bc34a;}
-.panelcolor2{background-color: #9ccc65;}
-.panelcolor3{background-color: #aed581;}
-.panelcolor4{background-color: #c5e1a5;}
+.panelcolor1 {
+  background-color: #8bc34a;
+}
+.panelcolor2 {
+  background-color: #9ccc65;
+}
+.panelcolor3 {
+  background-color: #aed581;
+}
+.panelcolor4 {
+  background-color: #c5e1a5;
+}
 /* ======================================================================== */
-
-
 
 /* Modifier: `uk-alert-success`
  ========================================================================== */
@@ -107,32 +124,43 @@ body {
 }
 /* ======================================================================== */
 
-
-
 /* offcanvas
  ========================================================================== */
-.uk-offcanvas {background: rgba(0, 0, 0, 0.4);}
+.uk-offcanvas {
+  background: rgba(0, 0, 0, 0.4);
+}
 .uk-offcanvas-bar {
   width: 220px;
   max-width: 100%;
   background: #424242;
 }
-ul.uk-nav-sub {padding: 5px 15px;}
-.uk-nav ul a {padding: 8px 0;}
+ul.uk-nav-sub {
+  padding: 5px 15px;
+}
+.uk-nav ul a {
+  padding: 8px 0;
+}
 /* ======================================================================== */
-
-
 
 /* autocomplete search bar
  ========================================================================== */
-#autocomplete1 .uk-dropdown {width: 253px;}
-#autocomplete2 .uk-dropdown {width: 190px;}
-#autocomplete2 ul {padding-left: 0;}
-#autocomplete2 .uk-nav > li > a {padding: 5px 15px;}
-.uk-nav-autocomplete > li.uk-active > a {background: #8bc34a; color: #212121;}
+#autocomplete1 .uk-dropdown {
+  width: 253px;
+}
+#autocomplete2 .uk-dropdown {
+  width: 190px;
+}
+#autocomplete2 ul {
+  padding-left: 0;
+}
+#autocomplete2 .uk-nav > li > a {
+  padding: 5px 15px;
+}
+.uk-nav-autocomplete > li.uk-active > a {
+  background: #8bc34a;
+  color: #212121;
+}
 /* ======================================================================== */
-
-
 
 /* navbar
  ========================================================================== */
@@ -141,86 +169,134 @@ ul.uk-nav-sub {padding: 5px 15px;}
   line-height: 70px;
   font-size: 16px;
 }
-.uk-navbar-brand {font-family: "Bangers", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;}
-.uk-navbar-brand, .uk-navbar-content, .uk-navbar-toggle {height: 70px;}
-.uk-navbar-brand {font-size: 28px;}
+.uk-navbar-brand {
+  font-family: 'Bangers', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+}
+.uk-navbar-brand,
+.uk-navbar-content,
+.uk-navbar-toggle {
+  height: 70px;
+}
+.uk-navbar-brand {
+  font-size: 28px;
+}
 /* colors */
-.uk-navbar {background: #fafafa; color: #212121;}
-.uk-navbar-nav > li > a {color: #212121;}
-.uk-navbar-nav > li:hover > a, .uk-navbar-nav > li > a:focus, .uk-navbar-nav > li.uk-open > a {background-color: #8bc34a; color: #212121;}
-.uk-navbar-nav > li > a:active {background-color: #7cb342; color: #212121;}
-.uk-navbar-nav > li.uk-active > a {background-color: #7cb342; color: #212121;}
+.uk-navbar {
+  background: #fafafa;
+  color: #212121;
+}
+.uk-navbar-nav > li > a {
+  color: #212121;
+}
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li.uk-open > a {
+  background-color: #8bc34a;
+  color: #212121;
+}
+.uk-navbar-nav > li > a:active {
+  background-color: #7cb342;
+  color: #212121;
+}
+.uk-navbar-nav > li.uk-active > a {
+  background-color: #7cb342;
+  color: #212121;
+}
 /* ======================================================================== */
-
-
 
 /* nav-navbar (dropdown)
  ========================================================================== */
-.uk-nav-navbar > li > a {color: #212121;}
-.uk-nav-navbar > li > a:hover, .uk-nav-navbar > li > a:focus {background: #8bc34a; color: #212121;}
-.uk-nav-navbar > li.uk-active {background: #7cb342; color: #212121;}
+.uk-nav-navbar > li > a {
+  color: #212121;
+}
+.uk-nav-navbar > li > a:hover,
+.uk-nav-navbar > li > a:focus {
+  background: #8bc34a;
+  color: #212121;
+}
+.uk-nav-navbar > li.uk-active {
+  background: #7cb342;
+  color: #212121;
+}
 /* ======================================================================== */
-
-
 
 /* custom background colors
  ========================================================================== */
-.bluegrey {background: #424242;} /* Material Blue Grey 900 */
-.green {                         /* for thumbnails */
+.bluegrey {
+  background: #424242;
+} /* Material Blue Grey 900 */
+.green {
+  /* for thumbnails */
   background: #7cb342 !important;
 }
 /* ======================================================================== */
 
-
-
 /* custom classes for venue page
  ========================================================================== */
 .darkbg {
-    background: #212121; /* Material Grey 900 */
-    padding: 40px 0;
+  background: #212121; /* Material Grey 900 */
+  padding: 40px 0;
 }
 
 .locationbg {
-    background: #7cb342;
-    padding: 25px 0;
+  background: #7cb342;
+  padding: 25px 0;
 }
-.roomcover {padding: 0 10px; background: rgba(0,0,0,0.7); font-size: 32px; line-height: 48px; color: #fff;}
+.roomcover {
+  padding: 0 10px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 32px;
+  line-height: 48px;
+  color: #fff;
+}
 
-.roomdate {padding: 0 10px; background: rgba(0,0,0,0.7); font-size: 20px; line-height: 24px; color: #fff; position: absolute; bottom: 0;}
+.roomdate {
+  padding: 0 10px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
 /* ======================================================================== */
-
-
 
 /* text colors
  ========================================================================== */
-.uk-text-primary {color: #7cb342 !important;}
+.uk-text-primary {
+  color: #7cb342 !important;
+}
 /* ======================================================================== */
-
-
 
 /* link colors
  ========================================================================== */
-a, .uk-link {color: #7cb342;}
-a:hover, .uk-link:hover {color: #33691e;}
+a,
+.uk-link {
+  color: #7cb342;
+}
+a:hover,
+.uk-link:hover {
+  color: #33691e;
+}
 .uk-contrast a:hover:not([class]) {
   color: #8bc34a;
   text-decoration: none;
 }
 /* ======================================================================== */
 
-
-
 /* other colors
  ========================================================================== */
-.uk-contrast .uk-icon-hover:hover {color: #8bc34a;}
-.uk-progress-bar {background: #7cb342;}
+.uk-contrast .uk-icon-hover:hover {
+  color: #8bc34a;
+}
+.uk-progress-bar {
+  background: #7cb342;
+}
 .uk-subnav-pill > .uk-active > * {
   background: #7cb342 none repeat scroll 0 0;
   color: rgba(0, 0, 0, 0.87);
 }
 /* ======================================================================== */
-
-
 
 /* offcanvas
  ========================================================================== */
@@ -230,23 +306,53 @@ html .uk-nav.uk-nav-offcanvas > li.uk-active > a {
 }
 /* ======================================================================== */
 
-
-
 /* darker overlay background for homepage venues
  ========================================================================== */
-.uk-overlay-background {background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;}
+.uk-overlay-background {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+}
 /* ======================================================================== */
-
-
 
 /* FORM component
  ========================================================================== */
-.uk-form select, .uk-form textarea, .uk-form input:not([type]), .uk-form input[type="text"], .uk-form input[type="password"], .uk-form input[type="datetime"], .uk-form input[type="datetime-local"], .uk-form input[type="date"], .uk-form input[type="month"], .uk-form input[type="time"], .uk-form input[type="week"], .uk-form input[type="number"], .uk-form input[type="email"], .uk-form input[type="url"], .uk-form input[type="search"], .uk-form input[type="tel"], .uk-form input[type="color"] {
+.uk-form select,
+.uk-form textarea,
+.uk-form input:not([type]),
+.uk-form input[type='text'],
+.uk-form input[type='password'],
+.uk-form input[type='datetime'],
+.uk-form input[type='datetime-local'],
+.uk-form input[type='date'],
+.uk-form input[type='month'],
+.uk-form input[type='time'],
+.uk-form input[type='week'],
+.uk-form input[type='number'],
+.uk-form input[type='email'],
+.uk-form input[type='url'],
+.uk-form input[type='search'],
+.uk-form input[type='tel'],
+.uk-form input[type='color'] {
   border-color: rgba(0, 0, 0, 0.5);
   background: #f5f5f5;
   color: rgba(0, 0, 0, 0.87);
 }
-.uk-form select:focus, .uk-form textarea:focus, .uk-form input:not([type]):focus, .uk-form input[type="text"]:focus, .uk-form input[type="password"]:focus, .uk-form input[type="datetime"]:focus, .uk-form input[type="datetime-local"]:focus, .uk-form input[type="date"]:focus, .uk-form input[type="month"]:focus, .uk-form input[type="time"]:focus, .uk-form input[type="week"]:focus, .uk-form input[type="number"]:focus, .uk-form input[type="email"]:focus, .uk-form input[type="url"]:focus, .uk-form input[type="search"]:focus, .uk-form input[type="tel"]:focus, .uk-form input[type="color"]:focus {
+.uk-form select:focus,
+.uk-form textarea:focus,
+.uk-form input:not([type]):focus,
+.uk-form input[type='text']:focus,
+.uk-form input[type='password']:focus,
+.uk-form input[type='datetime']:focus,
+.uk-form input[type='datetime-local']:focus,
+.uk-form input[type='date']:focus,
+.uk-form input[type='month']:focus,
+.uk-form input[type='time']:focus,
+.uk-form input[type='week']:focus,
+.uk-form input[type='number']:focus,
+.uk-form input[type='email']:focus,
+.uk-form input[type='url']:focus,
+.uk-form input[type='search']:focus,
+.uk-form input[type='tel']:focus,
+.uk-form input[type='color']:focus {
   border-color: #689f38;
   background: #c5e1a5;
   color: rgba(0, 0, 0, 0.87);
@@ -262,16 +368,46 @@ html .uk-nav.uk-nav-offcanvas > li.uk-active > a {
 }
 /* ======================================================================== */
 
-
-
 /* FORM component with uk-contrast modifier
  ========================================================================== */
-.uk-contrast .uk-form select, .uk-contrast .uk-form textarea, .uk-contrast .uk-form input:not([type]), .uk-contrast .uk-form input[type="text"], .uk-contrast .uk-form input[type="password"], .uk-contrast .uk-form input[type="datetime"], .uk-contrast .uk-form input[type="datetime-local"], .uk-contrast .uk-form input[type="date"], .uk-contrast .uk-form input[type="month"], .uk-contrast .uk-form input[type="time"], .uk-contrast .uk-form input[type="week"], .uk-contrast .uk-form input[type="number"], .uk-contrast .uk-form input[type="email"], .uk-contrast .uk-form input[type="url"], .uk-contrast .uk-form input[type="search"], .uk-contrast .uk-form input[type="tel"], .uk-contrast .uk-form input[type="color"] {
+.uk-contrast .uk-form select,
+.uk-contrast .uk-form textarea,
+.uk-contrast .uk-form input:not([type]),
+.uk-contrast .uk-form input[type='text'],
+.uk-contrast .uk-form input[type='password'],
+.uk-contrast .uk-form input[type='datetime'],
+.uk-contrast .uk-form input[type='datetime-local'],
+.uk-contrast .uk-form input[type='date'],
+.uk-contrast .uk-form input[type='month'],
+.uk-contrast .uk-form input[type='time'],
+.uk-contrast .uk-form input[type='week'],
+.uk-contrast .uk-form input[type='number'],
+.uk-contrast .uk-form input[type='email'],
+.uk-contrast .uk-form input[type='url'],
+.uk-contrast .uk-form input[type='search'],
+.uk-contrast .uk-form input[type='tel'],
+.uk-contrast .uk-form input[type='color'] {
   border-color: rgba(0, 0, 0, 0.5);
   background: #757575;
   color: rgba(255, 255, 255, 0.87);
 }
-.uk-contrast .uk-form select:focus, .uk-contrast .uk-form textarea:focus, .uk-contrast .uk-form input:not([type]):focus, .uk-contrast .uk-form input[type="text"]:focus, .uk-contrast .uk-form input[type="password"]:focus, .uk-contrast .uk-form input[type="datetime"]:focus, .uk-contrast .uk-form input[type="datetime-local"]:focus, .uk-contrast .uk-form input[type="date"]:focus, .uk-contrast .uk-form input[type="month"]:focus, .uk-contrast .uk-form input[type="time"]:focus, .uk-contrast .uk-form input[type="week"]:focus, .uk-contrast .uk-form input[type="number"]:focus, .uk-contrast .uk-form input[type="email"]:focus, .uk-contrast .uk-form input[type="url"]:focus, .uk-contrast .uk-form input[type="search"]:focus, .uk-contrast .uk-form input[type="tel"]:focus, .uk-contrast .uk-form input[type="color"]:focus {
+.uk-contrast .uk-form select:focus,
+.uk-contrast .uk-form textarea:focus,
+.uk-contrast .uk-form input:not([type]):focus,
+.uk-contrast .uk-form input[type='text']:focus,
+.uk-contrast .uk-form input[type='password']:focus,
+.uk-contrast .uk-form input[type='datetime']:focus,
+.uk-contrast .uk-form input[type='datetime-local']:focus,
+.uk-contrast .uk-form input[type='date']:focus,
+.uk-contrast .uk-form input[type='month']:focus,
+.uk-contrast .uk-form input[type='time']:focus,
+.uk-contrast .uk-form input[type='week']:focus,
+.uk-contrast .uk-form input[type='number']:focus,
+.uk-contrast .uk-form input[type='email']:focus,
+.uk-contrast .uk-form input[type='url']:focus,
+.uk-contrast .uk-form input[type='search']:focus,
+.uk-contrast .uk-form input[type='tel']:focus,
+.uk-contrast .uk-form input[type='color']:focus {
   border-color: #558b2f;
   background: #e0e0e0;
   color: rgba(0, 0, 0, 0.87);
@@ -286,8 +422,6 @@ html .uk-nav.uk-nav-offcanvas > li.uk-active > a {
   color: rgba(0, 0, 0, 0.5);
 }
 /* ======================================================================== */
-
-
 
 /* BUTTON component
  ========================================================================== */
@@ -304,8 +438,7 @@ html .uk-nav.uk-nav-offcanvas > li.uk-active > a {
 .uk-button-primary.uk-active {
   background-color: #558b2f;
   color: rgba(255, 255, 255, 0.87);
-}/* ======================================================================== */
-
+} /* ======================================================================== */
 
 /* BUTTON component with uk-contrast modifier
  ========================================================================== */
@@ -322,4 +455,4 @@ html .uk-nav.uk-nav-offcanvas > li.uk-active > a {
 .uk-contrast .uk-button-primary.uk-active {
   background-color: #558b2f;
   color: rgba(255, 255, 255, 0.87);
-}/* ======================================================================== */
+} /* ======================================================================== */

@@ -6,13 +6,13 @@ imageposition: 100%
 
 # your rating
 puzzles:
-- color: F2F24B
-- color: BFBFBF
-- color: F21313
-- color: F76D6D
-- color: 000000
+  - color: F2F24B
+  - color: BFBFBF
+  - color: F21313
+  - color: F76D6D
+  - color: 000000
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: hard
 difftext: Decent
 
@@ -23,7 +23,7 @@ team: 4-6
 guide: recommended,teamaction,beginners
 ---
 
- Πήγαινε.
+Πήγαινε.
 
 Τι; Δε φτάνει; Ουφ, καλά, ολόκληρο review it is.
 Ξεκινάς από ένα πεζοδρόμιο που έχει γίνει ένα έγκλημα, καλείσαι να δείξεις ότι δεν ήταν και τόσο τέλειο. Το ενδιαφέρον δεν είναι στο που ξεκινάς όμως, είναι που καταλήγεις.

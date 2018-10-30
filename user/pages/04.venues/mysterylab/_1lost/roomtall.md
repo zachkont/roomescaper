@@ -3,11 +3,11 @@ title: Lost
 
 # your rating
 puzzles:
-- color: 1F484C
-- color: 5E858C
-- color: 060203
+  - color: 1F484C
+  - color: 5E858C
+  - color: 060203
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: hard
 difftext: non-stop
 

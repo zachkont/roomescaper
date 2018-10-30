@@ -3,13 +3,13 @@ title: Paradox Project
 
 # your rating
 puzzles:
-- color: DBDBDB
-- color: 000000
-- color: DBDBDB
-- color: 000000
-- color: DBDBDB
+  - color: DBDBDB
+  - color: 000000
+  - color: DBDBDB
+  - color: 000000
+  - color: DBDBDB
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: hard
 difftext: Many things
 

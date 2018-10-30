@@ -1,11 +1,11 @@
 ---
 title: 'Ο μυστηριώδης θάνατος του Edgar A. Poe'
 puzzles:
-- color: 000000
-- color: 000000
-- color: 000000
-- color: 000000
-- color: 000000
+  - color: 000000
+  - color: 000000
+  - color: 000000
+  - color: 000000
+  - color: 000000
 
 difficulty: hard
 difftext: 'Proper riddles'

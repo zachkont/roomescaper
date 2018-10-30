@@ -6,13 +6,13 @@ imageposition: 20%
 
 # your rating
 puzzles:
-- color: 3C3636
-- color: 87867F
-- color: 6F281E
-- color: 3A4B21
-- color: 3C3636
+  - color: 3C3636
+  - color: 87867F
+  - color: 6F281E
+  - color: 3A4B21
+  - color: 3C3636
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: hard
 difftext: Interesting
 
@@ -35,4 +35,3 @@ guide: recommended, teamaction
 Αν και θα μου άρεσε να δρω περισσότερο με το περιβάλλον, είναι σπουδαίο και έτσι.
 
 Ότι πίστευα για την πρώτη εκτέλεση, πιστεύω και για ετούτη: Δράση, διασκέδαση και πρωτοτυπία, ακόμα και σήμερα. Ένα δωμάτιο που δε βλέπω γιατί να προσπεράσεις. Full grades all around
-

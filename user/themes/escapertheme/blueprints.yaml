@@ -1,8 +1,8 @@
 name: EscaperTheme
 version: 1.0.0
-description: "Escaper Theme"
+description: 'Escaper Theme'
 icon: empire
 author:
- name: "Nick & Zach"
- email: 
- url: 
+  name: 'Nick & Zach'
+  ? email
+  ? url

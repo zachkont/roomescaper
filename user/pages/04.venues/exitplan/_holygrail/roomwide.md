@@ -6,13 +6,12 @@ imageposition: 35%
 
 # your rating
 puzzles:
-- color: C3A992
-- color: FED64F
-- color: FED64F
-- color: C3A992
+  - color: C3A992
+  - color: FED64F
+  - color: FED64F
+  - color: C3A992
 
-
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: hard
 difftext: Decent
 
@@ -36,4 +35,4 @@ guide: duet
 πείσει, το κάνει άνετα. Αξιοποιεί λίγο από το δωμάτιο, αλλά χρησιμοποιείς διάφορα πράγματα με όμορφους τρόπους μέσα σε γρίφους. Δύσκολο να σε ενοχλήσει.
 
 Φαίνεται ότι είναι δωμάτιο που αναβαθμίζετε και η αναβάθμιση του έδωσε το 4ο κομμάτι παζλ. Καλό παιχνίδι, τίποτα λιγότερο από ευχάριστο. Αν γουστάρεις τα κλασσικά escapes, αυτό είναι
- λίγο καλύτερο.
+λίγο καλύτερο.

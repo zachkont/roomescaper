@@ -3,14 +3,14 @@ title: Lockwood Manor
 
 # your rating
 puzzles:
-- color: E01B1B
-- color: E01B1B
-- color: E01B1B
-- color: E01B1B
-- color: E01B1B
-- color: E01B1B
+  - color: E01B1B
+  - color: E01B1B
+  - color: E01B1B
+  - color: E01B1B
+  - color: E01B1B
+  - color: E01B1B
 
-# difficulty, easy/hard
+  # difficulty, easy/hard
 difficulty: easy
 difftext: Pay attention
 

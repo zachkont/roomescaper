@@ -1,4 +1,4 @@
-![Room Escaper](http://roomescaper.gr/github_icon.png)
+![Room Escaper](docs/github_icon.png?raw=true)
 
 # Room Escaper
 
