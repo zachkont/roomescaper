@@ -1,0 +1,57 @@
+<div class="uk-text-center uk-margin-large re-grid-container re-grid-container-center">
+
+    {{ content }}
+
+    <ul id="review-filter" class="uk-subnav uk-subnav-pill uk-flex-center">
+        <li class="uk-text-muted" style="padding-top: 3px; padding-bottom: 3px;">{{page.header.labels.show}}:</li>
+        <li data-uk-filter="" class="uk-active"><a aria-label="button" href="#">{{page.header.labels.all}}</a></li>
+        <li data-uk-filter="with-review"><a aria-label="button" href="#">{{page.header.labels.reviewed}}</a></li>
+        <li data-uk-filter="without-review"><a aria-label="button" href="#">{{page.header.labels.notreviewed}}</a></li>
+        <li class="uk-text-muted" style="padding-top: 3px; padding-bottom: 3px;">{{page.header.labels.sort}}:</li>
+        <li data-uk-sort="name:asc"><a aria-label="button" href="#">{{page.header.labels.az}}</a></li>
+        <li data-uk-sort="date:desc"><a aria-label="button" href="#">{{page.header.labels.latest}}</a></li>
+    </ul>
+
+    <div class="uk-grid-width-1-2 uk-grid-width-small-1-3 uk-grid-width-medium-1-4 uk-grid-width-xlarge-1-6" data-uk-grid="{controls: '#review-filter', gutter: 25}">
+        {% for venue in page.find('/venues').children %}
+        <div data-name="{%if venue.title|starts_with('The ')%}{{venue.title|ltrim('The ')}}{%else%}{{venue.title|titleize}}{%endif%}" data-date="{{venue.header.details.date}}" data-uk-filter="{%if venue.header.details.visitedrooms==0%}without-review{%else%}with-review{%endif%}">
+            <a class="uk-thumbnail {% if venue.header.details.visitedrooms>0 %}green{% endif %}" aria-label="button" href={% if venue.header.details.visitedrooms>0 %}"{{ venue.url }}"{% else %}"#{{venue.header.slug}}-modal" data-uk-modal{% endif %}>
+                <figure class="uk-overlay uk-overlay-hover">
+                    <!--<img src="{{ venue.media.images|first.cropResize(504, 504).url }}" class="uk-overlay-scale" alt="{{ venue.title }} logo" height="1024" width="1024">-->
+                    {{ venue.media.images|first.derivatives(160,1440,128).sizes('(max-width: 480px) 50vw, (max-width: 767px) 33vw,(max-width: 1220px) 25vw, 16vw').html(venue.title, venue.title, 'uk-overlay-scale') }}
+                    <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-bottom">
+                        <p><strong>{{ venue.title }}</strong><br>{{ venue.header.details.location }}</p>
+                        {% if venue.header.details.visitedrooms>0 %}
+                        <div class="uk-progress uk-progress-striped">
+                            <div class="uk-progress-bar" style="width: {{ venue.header.details.visitedrooms / venue.header.details.totalrooms * 100 }}%;">
+                                {{venue.header.details.visitedrooms}}/{{venue.header.details.totalrooms}} {% if venue.header.details.totalrooms==1 %}room{% else %}rooms{% endif %}
+                            </div>
+                        </div>
+                        {% elseif venue.header.details.visitedrooms==0 %}
+                            {% if venue.header.details.totalrooms %}
+                                <p class="uk-text-small">{{venue.header.details.totalrooms}} {% if venue.header.details.totalrooms==1 %}room{% else %}rooms{% endif %}</p>
+                            {% endif %}
+                        {% endif %}
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% for venue in page.find('/venues').children %}
+{% if venue.header.details.visitedrooms==0 %}
+<div class="uk-modal" id="{{venue.header.slug}}-modal">
+    <div class="uk-modal-dialog">
+        <div class="uk-modal-header"><h2>{{page.header.modal.headline}}</h2></div>
+        <p>{{page.header.modal.maintext}}</p>
+        <a href="{{venue.header.details.url}}" rel="noopener" aria-label="{{venue.header.slug}}" target="_blank">{{venue.header.details.url}}</a>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-modal-close">{{ page.header.modal.button2 }}</button>
+            <a href="{{venue.header.details.url}}" rel="noopener" aria-label="{{venue.header.slug}}" target="_blank" class="uk-button uk-button-primary"><i class="uk-icon-external-link"></i> {{ page.header.modal.button1 }}</a>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
