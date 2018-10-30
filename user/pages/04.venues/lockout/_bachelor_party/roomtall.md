@@ -17,7 +17,7 @@ difftext: Repeated
 team: 3-4
 
 # put your tags here. possible options: recommended,beginners,teamaction,duet
-? guide
+guide: ~
 ---
 
 Λίγο αρχική ιδέα hangover, χωρίς μωρό και τίγρη. Ή hangover-sherlocked homes, χωρίς λευκό δωμάτιο. Έχασες ένα φίλο σου και πρέπει να τον βρεις, κάποιος τον απήγαγε.

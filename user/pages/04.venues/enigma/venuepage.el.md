@@ -9,7 +9,7 @@ details:
   location: Μαρούσι
   visitedrooms: 0
   totalrooms: 3
-  ? date
+  date: ~
 
 content: # CAN'T TOUCH THIS SECTION
   items: @self.modular

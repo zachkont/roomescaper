@@ -19,7 +19,7 @@ location: Μαρούσι
 locationid: marousi
 
 # put your tags here. possible options: recommended,beginners,teamaction,duet
-? guide
+guide: ~
 ---
 
 {c:red}\*Notice: Παίχτηκε 7/17 , γράφτηκε 10/18. Τυχόν αποκλίσεις από την πραγματικότητα, πιθανές{/c}

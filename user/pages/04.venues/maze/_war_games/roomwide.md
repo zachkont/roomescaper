@@ -16,7 +16,7 @@ difftext: Decent
 team: 3-<a href="http://tardis.wikia.com/wiki/World_War_II">4</a>
 
 # put your tags here. possible options: recommended,beginners,teamaction,duet
-? guide
+guide: ~
 ---
 
 Β παγκόσμιος, σε πιάσανε και πρέπει να ξεφύγεις. Αλλά ε, μια που είσαι που είσαι στο αρχηγείο, βοήθα και κανέναν άλλο, αμαρτία είναι.

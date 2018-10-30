@@ -7,7 +7,7 @@ visible: true # CAN'T TOUCH THIS! default: true
 details:
   url: https://www.arkhamescape.gr/
   location: Καλλιθέα
-  ? visitedrooms
+  visitedrooms: ~
   totalrooms: 1
   date: 20171016
 

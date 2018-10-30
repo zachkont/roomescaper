@@ -9,7 +9,7 @@ details:
   location: Αγία Παρασκευή
   visitedrooms: 0
   totalrooms: 2
-  ? date
+  date: ~
 
 content: # CAN'T TOUCH THIS SECTION
   items: @self.modular

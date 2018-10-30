@@ -19,7 +19,7 @@ difftext: Tough+Classic
 team: 3-4
 
 # put your tags here. possible options: recommended,beginners,teamaction,duet
-? guide
+guide: ~
 ---
 
 Το τέταρτο παιχνίδι του Sherlocked Homes θα ήταν σφάλμα να πω ότι είναι ΑΠΛΩΣ το καλύτερο τους. Με ξεκάθαρες αναφορές σε ταινία και σχεδίαση που δείχνει πόσο ωρίμασαν σαν

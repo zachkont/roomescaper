@@ -15,7 +15,7 @@ difftext: pretty unclear
 team: 2-3
 
 # put your tags here. possible options: recommended,beginners,teamaction,duet
-? guide
+guide: ~
 ---
 
 Samara, 7 days, χωρίς κομμώτρια για πόσα χρόνια, τα γνωστά.

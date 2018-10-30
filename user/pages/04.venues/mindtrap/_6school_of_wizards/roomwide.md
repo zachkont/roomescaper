@@ -19,7 +19,7 @@ difftext: logic
 team: 2-4
 
 # put your tags here. possible options: recommended,beginners,teamaction,duet
-? guide
+guide: ~
 ---
 
 Ένα σχολείο μαγείας με διάφορα προβλήματα που χρειάζονται λύση και διάφορους μάγους να σε βοηθήσουν (και μερικούς να σε εμποδίσουν). Προσπάθησε να κάνει ένα μαγικό κόσμο

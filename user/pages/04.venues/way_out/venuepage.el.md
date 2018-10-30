@@ -9,7 +9,7 @@ details:
   location: Βριλήσσια
   visitedrooms: 0
   totalrooms: 1
-  ? date
+  date: ~
 
 content: # CAN'T TOUCH THIS SECTION
   items: @self.modular

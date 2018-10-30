@@ -19,7 +19,7 @@ difftext: Normal
 team: 2-4
 
 # put your tags here. possible options: recommended,beginners,teamaction,duet
-? guide
+guide: ~
 ---
 
 {c:red}_το δωμάτιο έχει προσθέσει ηθοποιό και άλλαξε όνομα, η κριτική δεν ανταποκρίνεται πλέον_{/c}

@@ -2,7 +2,7 @@
 title: Contamination
 
 # your rating
-? puzzles
+puzzles: ~
 
 # cover image vertical position, example: 75%
 imageposition: 60%
@@ -15,7 +15,7 @@ difftext: INTENSE
 team: 54
 
 # your tags here. possible options: recommended,beginners,teamaction
-? guide
+guide: ~
 ---
 
 {c:red}Αυτό το event έγινε τέλη Ιουλίου. Αυτή τη στιγμή, δεν ειναι διαθέσιμο.{/c}

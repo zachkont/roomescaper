@@ -7,7 +7,7 @@ visible: true # CAN'T TOUCH THIS! default: true
 details:
   url: http://braincells.gr/
   location: Πειραιάς
-  ? visitedrooms
+  visitedrooms: ~
   totalrooms: 1
   date: 20171016
 

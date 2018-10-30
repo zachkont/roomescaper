@@ -20,7 +20,7 @@ location: Πειραιάς
 locationid: pireus
 
 # put your tags here. possible options: recommended,beginners,teamaction,duet
-? guide
+guide: ~
 ---
 
 {c:red}_Έπαιξα καλοκαίρι του 17, έχει υποστεί αλλαγές και δεν εγγυώμαι την ακρίβεια του review_{/c}

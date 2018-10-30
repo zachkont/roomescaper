@@ -23,7 +23,7 @@ locationid: neasmurnh
 team: 2-4
 
 # put your tags here. possible options: recommended,beginners,teamaction,duet
-? guide
+guide: ~
 ---
 
 Αυτή η εκτέλεση του δωματίου Da Vinci έχει όσα έχουν όλες, δισκοπότηρα, πίνακες, κρυμμένα μυστικά και έχει και ένα bonus στοιχείο που ακούει στο όνομα Σοφί.

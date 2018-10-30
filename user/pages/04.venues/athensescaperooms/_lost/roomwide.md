@@ -19,7 +19,7 @@ team: 2-3
 #change in location
 
 # put your tags here. possible options: recommended,beginners,teamaction,duet
-? guide
+guide: ~
 ---
 
 Λίγο Lost και λίγο Caribbean θύμισε, όντως. Έπεσες με ένα αεροπλάνο και -ω τι ατυχία- το μέρος που βρέθηκες έχει κακή θεότητα. Τρέχα τώρα να την ηρεμήσεις.

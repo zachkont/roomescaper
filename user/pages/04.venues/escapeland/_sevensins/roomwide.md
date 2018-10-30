@@ -16,7 +16,7 @@ difftext: Simple stuff
 team: 2-4
 
 # put your tags here. possible options: recommended,beginners,teamaction,duet
-? guide
+guide: ~
 ---
 
 Το παιχνίδι έχει να κάνει με τα αμαρτήματα και τα συναντάς ένα-ένα.
