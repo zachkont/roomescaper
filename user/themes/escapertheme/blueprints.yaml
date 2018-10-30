@@ -4,5 +4,5 @@ description: 'Escaper Theme'
 icon: empire
 author:
   name: 'Nick & Zach'
-  ? email
-  ? url
+  email: ~
+  url: ~
