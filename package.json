@@ -1,0 +1,15 @@
+{
+  "name": "roomescaper",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "git@github.com:zachkont/roomescaper.git",
+  "author": "Nikolaos Stamatopoulos <stamatopoulosnikos@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "prettier-check": "prettier -l 'user/pages/**/*.md' 'user/themes/**/*.{css,yaml}'"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3"
+  }
+}
