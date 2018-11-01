@@ -1,0 +1,40 @@
+env: ~
+
+steps:
+  - name: ":docker: Build image"
+    plugins:
+      docker-compose#v2.5.1:
+        build: roomescaper
+        config: docker-compose.release.yml
+        image-name: ${BUILDKITE_BUILD_NUMBER}
+
+  - wait
+
+  - label: ':prettier: Prettier'
+    command: '/tmp/ops/prettier.sh'
+    plugins:
+      docker-compose#v2.5.1:
+        run: roomescaper
+        config: docker-compose.release.yml
+
+  - wait
+
+  - label: ':package: Prepare release package'
+    branches: 'master develop'
+    command: '/tmp/ops/prepare-release.sh'
+    plugins:
+      docker-compose#v2.5.1:
+        run: roomescaper
+        config: docker-compose.release.yml
+
+  - wait
+
+  - label: ':mountain_cableway: Deploy to staging'
+    branches: 'develop'
+    command: '.ops/deployer/run-deploy.sh staging'
+
+  - block
+
+  - label: ':mountain_cableway: Deploy to production'
+    branches: 'master'
+    command: '.ops/deployer/run-deploy.sh production'

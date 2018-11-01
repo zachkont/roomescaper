@@ -1,0 +1,46 @@
+FROM php:7.2-apache
+
+ARG GRAV_VERSION
+ARG GRAV_SHA1
+
+# Install dependencies
+RUN set -ex; \
+    apt-get update && apt-get install -y --no-install-recommends \
+        git \
+        unzip \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libpng-dev \
+        libyaml-dev \
+    ; \
+    docker-php-ext-install opcache; \
+    docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/; \
+    docker-php-ext-install -j$(nproc) gd; \
+    docker-php-ext-install zip; \
+    pecl install apcu; \
+    pecl install yaml; \
+    docker-php-ext-enable apcu yaml; \
+# Enable Apache Rewrite + Expires Module
+    a2enmod rewrite expires
+
+COPY .ops/dist/development/php.ini /usr/local/etc/php/conf.d/
+
+# Set user to www-data
+RUN chown www-data:www-data /var/www
+USER www-data
+
+# Install grav
+WORKDIR /var/www
+RUN set -ex; \
+    curl -o grav-admin.zip -SL https://getgrav.org/download/core/grav-admin/${GRAV_VERSION}; \
+    echo "$GRAV_SHA1 grav-admin.zip" | sha1sum -c -; \
+    unzip grav-admin.zip; \
+    mv -T /var/www/grav-admin /var/www/html; \
+    rm grav-admin.zip
+
+# Install grav plugins
+RUN cd html/; \
+    bin/grav install
+
+# Return to root user
+USER root

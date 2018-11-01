@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  roomescaper:
+    build:
+      context: ./
+      dockerfile: Dockerfile.release
+      args:
+        - BUILDKITE_BUILD_NUMBER=${BUILDKITE_BUILD_NUMBER}
+        - GRAV_VERSION=1.5.3
+        - GRAV_SHA1=2265fd3624278922c009ca2907977d1ccc7a8253
+    image: roomescaper:${BUILDKITE_BUILD_NUMBER}

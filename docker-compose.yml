@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  roomescaper:
+    build:
+      context: ./
+      dockerfile: Dockerfile.development
+      args:
+        - GRAV_VERSION=1.5.3
+        - GRAV_SHA1=2265fd3624278922c009ca2907977d1ccc7a8253
+    container_name: roomescaper
+    ports:
+      - '80:80'
+    volumes:
+      - './user/.dependencies:/var/www/html/user/.dependencies'
+      - './user/accounts:/var/www/html/user/accounts'
+      - './user/config:/var/www/html/user/config'
+      - './user/data:/var/www/html/user/data'
+      - './user/pages:/var/www/html/user/pages'
+      - './user/themes:/var/www/html/user/themes'
