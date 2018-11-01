@@ -1,0 +1,78 @@
+git:
+    admin:
+        url: https://github.com/getgrav/grav-plugin-admin
+        path: plugins/admin
+        branch: master
+    backup-manager:
+        url: https://github.com/leotiger/grav-plugin-backup-manager
+        path: plugins/backup-manager
+        branch: master
+    data-manager:
+        url: https://github.com/getgrav/grav-plugin-data-manager
+        path: plugins/data-manager
+        branch: master
+    email:
+        url: https://github.com/getgrav/grav-plugin-email
+        path: plugins/email
+        branch: master
+    error:
+        url: https://github.com/getgrav/grav-plugin-error
+        path: plugins/error
+        branch: master
+    form:
+        url: https://github.com/getgrav/grav-plugin-form
+        path: plugins/form
+        branch: master
+    langswitcher:
+        url: https://github.com/getgrav/grav-plugin-langswitcher
+        path: plugins/langswitcher
+        branch: master
+    login:
+        url: https://github.com/getgrav/grav-plugin-login
+        path: plugins/login
+        branch: master
+    markdown-color:
+        url: https://github.com/getgrav/grav-plugin-markdown-color
+        path: plugins/markdown-color
+        branch: master
+    problems:
+        url: https://github.com/getgrav/grav-plugin-problems
+        path: plugins/problems
+        branch: master
+links:
+    admin:
+        src: grav-plugin-admin
+        path: plugins/admin
+        scm: github
+    backup-manager:
+        src: grav-plugin-backup-manager
+        path: plugins/backup-manager
+        scm: github
+    data-manager:
+        src: grav-plugin-data-manager
+        path: plugins/data-manager
+        scm: github
+    email:
+        src: grav-plugin-email
+        path: plugins/email
+        scm: github
+    form:
+        src: grav-plugin-form
+        path: plugins/form
+        scm: github
+    langswitcher:
+        src: grav-plugin-langswitcher
+        path: plugins/langswitcher
+        scm: github
+    login:
+        src: grav-plugin-login
+        path: plugins/login
+        scm: github
+    markdown-color:
+        src: grav-plugin-markdown-color
+        path: plugins/markdown-color
+        scm: github
+    problems:
+        src: grav-plugin-problems
+        path: plugins/problems
+        scm: github
