@@ -11,5 +11,11 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.twig]
+[*.{php,twig}]
+indent_size = 4
+
+[.dependencies]
+indent_size = 4
+
+[Dockerfile.*]
 indent_size = 4
